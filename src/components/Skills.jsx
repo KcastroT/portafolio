@@ -61,6 +61,35 @@ const SkillsData = {
     },
   ],
 };
+
+const SkillBar = ({ skillName, skillLevel }) => {
+  const [width, setWidth] = useState("0%");
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setWidth(`${skillLevel * 100}%`);
+    }, 100);
+    return () => clearTimeout(timeout);
+  }, [skillLevel]);
+
+  return (
+    <div className="mb-4">
+      <div className="flex justify-between mb-1">
+        <span className="text-sm font-medium text-gray-700">{skillName}</span>
+        <span className="text-sm font-medium text-gray-700">
+          {Math.round(skillLevel * 100)}%
+        </span>
+      </div>
+      <div className="w-full bg-gray-200 rounded-full h-4 overflow-hidden">
+        <div
+          className="bg-green-600 h-full rounded-full transition-all duration-1000 ease-out"
+          style={{ width }}
+        ></div>
+      </div>
+    </div>
+  );
+};
+
 const Skills = () => {
   return (
     <div className="px-4 py-12 bg-gray-100 flex flex-col items-center space-y-8">
@@ -76,33 +105,11 @@ const Skills = () => {
             const skillName = Object.keys(skillObj)[0];
             const skillLevel = skillObj[skillName];
             return (
-              <div key={idx} className="mb-4">
-                <div className="flex justify-between mb-1">
-                  <span className="text-sm font-medium text-gray-700">
-                    {skillName}
-                  </span>
-                  <span className="text-sm font-medium text-gray-700">
-                    {Math.round(skillLevel * 100)}%
-                  </span>
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-4 overflow-hidden">
-                  {(() => {
-                    const [width, setWidth] = useState("0%");
-                    useEffect(() => {
-                      const timeout = setTimeout(() => {
-                        setWidth(`${skillLevel * 100}%`);
-                      }, 100);
-                      return () => clearTimeout(timeout);
-                    }, []);
-                    return (
-                      <div
-                        className="bg-green-600 h-full rounded-full transition-all duration-1000 ease-out"
-                        style={{ width }}
-                      ></div>
-                    );
-                  })()}
-                </div>
-              </div>
+              <SkillBar
+                key={idx}
+                skillName={skillName}
+                skillLevel={skillLevel}
+              />
             );
           })}
         </div>
