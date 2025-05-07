@@ -17,16 +17,35 @@ const Intro = () => {
           className="rounded-full w-48 sm:w-56 md:w-64 h-auto mx-auto mb-4 shadow-lg border-4 border-white transition-transform duration-300 hover:scale-105"
         />
         <p className="text-lg mb-8">
-          Full Stack Developer | Computer science student at ITESM CEM
+          Full Stack Developer | Computer Science Student at ITESM CEM
         </p>
         <p>
-          Soy Kevin Castro, estudiante de ingeniería en computación en el ITESM
-          CEM. Me apasiona la tecnología y el desarrollo de software. He
-          trabajado en proyectos de desarrollo web y móvil, utilizando
-          tecnologías como React, Node.js, Kotlin y Swift. También tengo
-          experiencia e interés en el desarrollo de videojuegos (C#) y la
-          ciberseguridad. Siempre estoy buscando aprender y mejorar mis
-          habilidades.
+          I am Kevin Castro, a computer engineering student at ITESM CEM. I am
+          passionate about technology and software development. I have worked on
+          web and mobile development projects, using technologies such as React,
+          Node.js, Kotlin, and Swift. I also have experience and interest in
+          video game development (C#) and cybersecurity. I am always looking to
+          learn and improve my skills.
+        </p>
+        <h2 className="text-2xl font-bold mt-8 mb-4">Education</h2>
+        <p>
+          <strong>Prepa Tecmilenio</strong>- High School -{" "}
+          <strong>2018 - 2022</strong>
+        </p>
+        <p>
+          <strong>ITESM CEM</strong> - Computer Engineering -
+          <strong> 2022 - 2026 (Estimated Graduation Date)</strong>
+        </p>
+        <h2 className="text-2xl font-bold mt-8 mb-4">Languages</h2>
+        <p>
+          <strong>Spanish</strong> - Native
+        </p>
+        <p>
+          <strong>English</strong> - B2 (Upper Intermediate) -{" "}
+          <strong>Cambridge First Certificate</strong>
+        </p>
+        <p>
+          <strong>French</strong> - A2 (Elementary)
         </p>
       </div>
     </div>

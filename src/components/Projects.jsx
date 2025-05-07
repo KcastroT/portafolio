@@ -3,29 +3,29 @@ import React from "react";
 const ProjectsData = [
   {
     title: "Verqor Game",
-    description: "Un juego de cartas desarrollado en Unity.",
+    description: "A card game developed in Unity.",
     image: "/portafolio/assets/images/verqor.png",
   },
   {
     title: "Zazil App",
-    description: "Una app de Android desarrollada en Kotlin.",
+    description: "An Android app developed in Kotlin.",
     image: "/portafolio/assets/images/zazil.png",
   },
   {
     title: "HackMx 6",
-    description: "Coordinador de logística en HackMx 6.",
+    description: "Logistics coordinator at HackMx 6.",
     image: "/portafolio/assets/images/hackmx.png",
   },
   {
-    title: "Becario en KTSA: KPMG Technologies Services Americas",
+    title: "Intern at KTSA: KPMG Technologies Services Americas",
     description:
-      "Becario en el área de ciberseguridad y cómputo forense. Durante los años 2022 y 2023.",
+      "Intern in the cybersecurity and forensic computing area during the years 2022 and 2023.",
     image: null,
   },
   {
     title: "AESC CEM",
     description:
-      "Elegido coordinador de proyectos de la Asociación de Estudiantes de Sistemas Computacionales del ITESM CEM.",
+      "Elected project coordinator of the Association of Computer Systems Students at ITESM CEM.",
     image: null,
   },
 ];
