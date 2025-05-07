@@ -6,12 +6,14 @@ const ProjectsData = [
     description:
       "Developed for Verqor, this game empowers players to cultivate virtual farms and gain insights into financial decision-making. Constructed using Unity and backed by a MySQL database, it seamlessly integrates entertainment with educational challenges, fostering strategic thinking and resource management skills.",
     image: "/portafolio/assets/images/verqor.png",
+    github: "https://github.com/KcastroT/Granja_V2",
   },
   {
     title: "Zazil App",
     description:
       "A mobile application developed in Kotlin to support a noble cause, this application serves as an online shopping platform that integrates Stripe for secure payment processing and employs a MySQL database for efficient business sales tracking.",
     image: "/portafolio/assets/images/zazil.png",
+    github: "https://github.com/rn0x7f/B5",
   },
   {
     title: "HackMx 6",
@@ -37,11 +39,11 @@ const Projects = () => {
   return (
     <div className="px-4 py-12 bg-gray-300" id="projects">
       <h2 className="text-3xl font-bold text-center mb-10">Projects</h2>
-      <div className="grid gap-8 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center">
+      <div className="grid gap-8 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-stretch">
         {ProjectsData.map((project, index) => (
           <div
             key={index}
-            className="bg-white rounded-2xl shadow-lg overflow-hidden w-full max-w-lg flex flex-col"
+            className="bg-white rounded-2xl shadow-lg overflow-hidden w-full max-w-lg min-h-[400px] h-full flex flex-col"
           >
             {project.image ? (
               <img
@@ -55,6 +57,18 @@ const Projects = () => {
             <div className="p-6 flex-1 flex flex-col justify-start">
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
               <p className="text-gray-600">{project.description}</p>
+            </div>
+            <div className="p-4 bg-gray-100 flex justify-between items-center">
+              {project.github && (
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:text-blue-700 transition duration-200"
+                >
+                  GitHub Repository
+                </a>
+              )}
             </div>
           </div>
         ))}

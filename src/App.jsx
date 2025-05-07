@@ -7,7 +7,7 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <nav className="bg-blue-500 text-white p-4 sticky top-0 z-50 shadow-md">
+      <nav className="bg-blue-800 text-white p-4 sticky top-0 z-50 shadow-md">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="text-xl font-bold">Kevin Castro</div>
           <button
@@ -32,12 +32,12 @@ function App() {
           <ul
             className={`${
               isOpen ? "block" : "hidden"
-            } absolute top-full left-0 w-full bg-green-800 md:bg-transparent md:static md:flex md:items-center space-y-4 md:space-y-0 md:space-x-6 text-center py-4 md:py-0`}
+            } absolute top-full left-0 w-full bg-blue-800 md:bg-transparent md:static md:flex md:items-center space-y-4 md:space-y-0 md:space-x-6 text-center py-4 md:py-0`}
           >
             <li>
               <a
                 href="#intro"
-                className="block hover:text-green-200 transition-colors duration-200"
+                className="block hover:text-blue-200 transition-colors duration-200"
               >
                 About
               </a>
@@ -45,7 +45,7 @@ function App() {
             <li>
               <a
                 href="#projects"
-                className="block hover:text-green-200 transition-colors duration-200"
+                className="block hover:text-blue-200 transition-colors duration-200"
               >
                 Projects
               </a>
@@ -53,7 +53,7 @@ function App() {
             <li>
               <a
                 href="#skills"
-                className="block hover:text-green-200 transition-colors duration-200"
+                className="block hover:text-blue-200 transition-colors duration-200"
               >
                 Skills
               </a>
@@ -61,7 +61,7 @@ function App() {
             <li>
               <a
                 href="#contact"
-                className="block hover:text-green-200 transition-colors duration-200"
+                className="block hover:text-blue-200 transition-colors duration-200"
               >
                 Contact
               </a>
