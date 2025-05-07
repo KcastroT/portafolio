@@ -16,6 +16,13 @@ const ProjectsData = [
     github: "https://github.com/rn0x7f/B5",
   },
   {
+    title: "Traffic Simulation System",
+    description:
+      "A traffic simulation system designed to enhance the efficiency of traffic lights and reduce congestion. This project was developed using Python and Unity, showcasing my skills in programming and problem-solving.",
+    image: "/portafolio/assets/images/traffic.png",
+    github: "https://github.com/KcastroT/Bloque-de-Agentes",
+  },
+  {
     title: "HackMx 6",
     description:
       "In my capacity as the logistics coordinator, I oversaw the successful execution of HackMx 6, an event held at the Tecnológico de Monterrey, CEM. My primary responsibility was to ensure the seamless coordination of all aspects of the event, contributing to its overall success.",
