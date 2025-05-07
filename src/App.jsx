@@ -1,14 +1,15 @@
 import { useState } from "react";
 import Intro from "./components/Intro";
 import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <nav className="bg-green-800 text-white p-4 sticky top-0 z-50 shadow-md">
+      <nav className="bg-blue-500 text-white p-4 sticky top-0 z-50 shadow-md">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="text-xl font-semibold">Kevin Castro</div>
+          <div className="text-xl font-bold">Kevin Castro</div>
           <button
             className="md:hidden block focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
@@ -71,6 +72,7 @@ function App() {
       <Intro />
 
       <Projects />
+      <Skills />
     </>
   );
 }
