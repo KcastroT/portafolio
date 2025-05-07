@@ -2,6 +2,7 @@ import { useState } from "react";
 import Intro from "./components/Intro";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -73,6 +74,10 @@ function App() {
 
       <Projects />
       <Skills />
+      <Contact />
+      <footer className="bg-blue-800 text-white p-4 text-center">
+        <p>&copy; 2025 Kevin Castro.</p>
+      </footer>
     </>
   );
 }
