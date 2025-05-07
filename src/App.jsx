@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Intro from "./components/Intro";
+import Projects from "./components/Projects";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +35,7 @@ function App() {
           >
             <li>
               <a
-                href="#about"
+                href="#intro"
                 className="block hover:text-green-200 transition-colors duration-200"
               >
                 About
@@ -68,6 +69,8 @@ function App() {
         </div>
       </nav>
       <Intro />
+
+      <Projects />
     </>
   );
 }
