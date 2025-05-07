@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const SkillsData = {
   frontend: [
     {
-      "HTML/CSS": 0.8,
+      "HTML/CSS": 0.9,
     },
     {
       JavaScript: 0.85,
@@ -45,19 +45,30 @@ const SkillsData = {
   ],
   languages: [
     {
-      "C++": 0.6,
+      "C++": 0.7,
     },
     {
       Python: 0.8,
-    },
-    {
-      Java: 0.6,
     },
     {
       "C#": 0.5,
     },
     {
       SQL: 0.7,
+    },
+  ],
+  miscellaneous: [
+    {
+      Git: 0.9,
+    },
+    {
+      Agile: 0.8,
+    },
+    {
+      Postman: 0.7,
+    },
+    {
+      Linux: 0.65,
     },
   ],
 };
