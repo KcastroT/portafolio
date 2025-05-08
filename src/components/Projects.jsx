@@ -73,7 +73,7 @@ const Projects = () => {
                   rel="noopener noreferrer"
                   className="text-blue-500 hover:text-blue-700 transition duration-200"
                 >
-                  GitHub Repository
+                  View on GitHub
                 </a>
               )}
             </div>

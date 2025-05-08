@@ -47,6 +47,11 @@ const Intro = () => {
         <p>
           <strong>French</strong> - A2 (Elementary)
         </p>
+        <a href="/portafolio/resources/dummy.pdf" download>
+          <button className="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full shadow-md transition duration-300">
+            Download CV
+          </button>
+        </a>
       </div>
     </div>
   );
