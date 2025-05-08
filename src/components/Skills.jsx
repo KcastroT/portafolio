@@ -26,12 +26,6 @@ const SkillsData = {
       Express: 0.75,
     },
     {
-      MongoDB: 0.6,
-    },
-    {
-      MySQL: 0.7,
-    },
-    {
       Flask: 0.7,
     },
   ],
@@ -54,7 +48,10 @@ const SkillsData = {
       "C#": 0.5,
     },
     {
-      SQL: 0.7,
+      Clojure: 0.6,
+    },
+    {
+      Java: 0.5,
     },
   ],
   miscellaneous: [
@@ -69,6 +66,12 @@ const SkillsData = {
     },
     {
       Linux: 0.65,
+    },
+    {
+      MongoDB: 0.6,
+    },
+    {
+      MySQL: 0.7,
     },
   ],
 };
