@@ -33,7 +33,7 @@ const Intro = () => {
           <strong>2018 - 2022</strong>
         </p>
         <p>
-          <strong>ITESM CEM</strong> - Computer Engineering -
+          <strong>ITESM CEM</strong> - Computer Science -
           <strong> 2022 - 2026 (Estimated Graduation Date)</strong>
         </p>
         <h2 className="text-2xl font-bold mt-8 mb-4">Languages</h2>
