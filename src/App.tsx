@@ -76,7 +76,7 @@ function App() {
       <Skills />
       <Contact />
       <footer className="bg-blue-800 text-white p-4 text-center">
-        <p>&copy; 2025 Kevin Castro.</p>
+        <p>&copy; 2025 Kevin Castro. All rights reserved.</p>
       </footer>
     </>
   );

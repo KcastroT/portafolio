@@ -76,7 +76,13 @@ const SkillsData = {
   ],
 };
 
-const SkillBar = ({ skillName, skillLevel }) => {
+const SkillBar = ({
+  skillName,
+  skillLevel,
+}: {
+  skillName: string;
+  skillLevel: number;
+}) => {
   const [width, setWidth] = useState("0%");
 
   useEffect(() => {
@@ -117,7 +123,7 @@ const Skills = () => {
           </h2>
           {skills.map((skillObj, idx) => {
             const skillName = Object.keys(skillObj)[0];
-            const skillLevel = skillObj[skillName];
+            const skillLevel = skillObj[skillName as keyof typeof skillObj];
             return (
               <SkillBar
                 key={idx}
