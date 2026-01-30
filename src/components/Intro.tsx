@@ -43,7 +43,7 @@ const Intro = () => {
               <strong>English</strong> - B2 (Upper Intermediate) - <strong>Cambridge First Certificate</strong>
             </p>
           </div>
-          <a href="/portafolio/resources/CV_KevinCastro.pdf" download>
+          <a href="/portafolio/resources/CV_Kevin_Castro.pdf" download>
             <button className="mt-8 bg-gradient-to-r from-blue-600 to-green-500 hover:from-blue-700 hover:to-green-600 text-white font-semibold py-2 px-8 rounded-full shadow-lg transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">
               Download CV
             </button>
