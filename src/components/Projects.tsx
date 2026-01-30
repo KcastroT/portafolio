@@ -1,5 +1,3 @@
-import React from "react";
-
 const ProjectsData = [
   {
     title: "Verqor Game",
@@ -39,41 +37,47 @@ const ProjectsData = [
     description:
       "Elected project coordinator of the Association of Computer Systems Students at ITESM Campus Estado de México.",
     image: null,
-  },
+  },{
+  title: "Cybersecurity Concentration - OT Protection Project",
+  description:
+    "Participated in a cybersecurity concentration at ITESM CEM, where the main project focused on protecting Operational Technology (OT) systems from IT threats. Additionally, worked on penetration testing, security monitoring, and implementing best practices for IT-OT convergence to enhance overall cybersecurity posture.",
+  image: null,
+  github: null, 
+}
 ];
 
 const Projects = () => {
   return (
-    <div className="px-4 py-12 bg-gray-300" id="projects">
-      <h2 className="text-3xl font-bold text-center mb-10">
+    <div className="px-4 py-14 bg-gradient-to-b from-blue-50 via-gray-100 to-green-50" id="projects">
+      <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 tracking-tight">
         Projects / Experience
       </h2>
-      <div className="grid gap-8 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-stretch">
+      <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-stretch">
         {ProjectsData.map((project, index) => (
           <div
             key={index}
-            className="bg-white rounded-2xl shadow-lg overflow-hidden w-full max-w-lg min-h-[400px] h-full flex flex-col"
+            className="bg-white rounded-2xl shadow-lg overflow-hidden w-full min-h-[420px] flex flex-col transition-transform duration-300 hover:scale-[1.025] hover:shadow-2xl group"
           >
             {project.image ? (
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-64 object-contain object-center rounded-t-2xl bg-white"
+                className="w-full h-52 object-cover object-center rounded-t-2xl bg-gray-200 transition duration-300 group-hover:brightness-95"
               />
             ) : (
-              <div className="w-full h-64 flex items-center justify-center bg-gray-200 rounded-t-2xl text-gray-700 font-semibold text-lg px-4 text-center"></div>
+              <div className="w-full h-52 flex items-center justify-center bg-gray-100 rounded-t-2xl text-gray-700 font-semibold text-lg px-4 text-center"></div>
             )}
             <div className="p-6 flex-1 flex flex-col justify-start">
-              <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+              <h3 className="text-xl font-semibold mb-2 text-blue-700">{project.title}</h3>
               <p className="text-gray-600">{project.description}</p>
             </div>
-            <div className="p-4 bg-gray-100 flex justify-between items-center">
+            <div className="p-4 bg-gray-50 flex justify-between items-center">
               {project.github && (
                 <a
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-500 hover:text-blue-700 transition duration-200"
+                  className="inline-block bg-gradient-to-r from-blue-500 to-green-400 text-white font-semibold px-5 py-2 rounded-full shadow hover:from-blue-600 hover:to-green-500 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400"
                 >
                   View on GitHub
                 </a>
