@@ -2,31 +2,33 @@ import type { SkillsDataType } from "../types/SkillsType";
 
 const SkillsData: SkillsDataType = {
   frontend: [
-    { "HTML/CSS": "Advanced" },
-    { JavaScript: "Advanced" },
-    { TypeScript: "Advanced" },
     { React: "Advanced" },
-    { TailwindCSS: "Advanced" },
+    { TypeScript: "Advanced" },
+    { JavaScript: "Advanced" },
+    { "TailwindCSS and Styling": "Advanced" },
+    { "Responsive UI/UX": "Intermediate" },
   ],
   backend: [
-    { NodeJS: "Intermediate" },
-    { Express: "Intermediate" },
-    { "Python Frameworks": "Intermediate" },
+    { Python: "Advanced" },
+    { NodeJS: "Advanced" },
+    { "REST APIs": "Advanced" },
+    { Express: "Advanced" },
+    { "Database Design": "Intermediate" },
   ],
   languages: [
-    { "C/C++": "Intermediate" },
+    { "C/C++": "Advanced" },
+    { TypeScript: "Advanced" },
     { Python: "Advanced" },
-    { "C#": "Beginner" },
-    { Clojure: "Beginner" },
-    { Java: "Intermediate" },
+    { SQL: "Advanced" },
   ],
   other: [
     { Git: "Advanced" },
-    { Agile: "Intermediate" },
-    { Postman: "Intermediate" },
     { Linux: "Advanced" },
+    { "Data Structures & Algorithms": "Advanced" },
+    { Networking: "Advanced" },
+    { "Problem Solving": "Advanced" },
     { Docker: "Intermediate" },
-    { "SQL Databases": "Intermediate" },
+    { "Machine Learning": "Intermediate" },
   ],
 };
 

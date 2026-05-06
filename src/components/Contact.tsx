@@ -6,7 +6,7 @@ const Contact = () => {
   const links = [
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/kevin-santiago-castro-torres-0b08b135a",
+      url: "https://www.linkedin.com/in/kevin-santiago-castro-torres",
       icon: <FaLinkedin size={28} />,
       color: "bg-blue-600 hover:bg-blue-700",
     },
